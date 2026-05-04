@@ -53,3 +53,11 @@ create table pagos (
     medio_pago varchar(50),
     foreign key (id_factura) references facturas(id_factura)
 );
+
+
+SET FOREIGN_KEY_CHECKS = 0;
+
+TRUNCATE TABLE pagos;
+TRUNCATE TABLE facturas;
+
+SET FOREIGN_KEY_CHECKS = 1;
